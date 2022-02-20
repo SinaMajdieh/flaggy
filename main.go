@@ -142,6 +142,7 @@ func save_img(path string, img image.Image) error {
 	return err
 }
 func create_rand_bg(grid [][]cell, m map[string]image.Image, id int, key byte) {
+	fmt.Printf("creating random gird #%s%d\n", string(key), id)
 	for j := 0; j < Height_count; j++ {
 		for i := 0; i < Width_count; i++ {
 			for y := 0; y < Height; y++ {
